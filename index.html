@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./src/style.css" />
+  <title>my-gsap-project</title>
+</head>
+
+<body>
+
+  <nav class="nav hidden">
+    <a href="/">Home</a>
+    <a href="/about/">About Us</a>
+  </nav>
+  <div id="app">
+
+    <section data-slideshow="wrap" class="crisp-header is--loading is--hidden">
+      <div class="crisp-header__slider">
+        <div class="crisp-header__slider-list">
+          <div data-slideshow="slide" class="crisp-header__slider-slide is--current"><img
+              class="crisp-header__slider-slide-inner"
+              src="https://cdn.prod.website-files.com/69158db916f2854de7fae735/69158e74238022f91976b241_green-headphone-close-up.avif"
+              alt="Close-up of textured green headphones focusing on the ear cup and headband connection."
+              data-slideshow="parallax" draggable="false"></div>
+          <div data-slideshow="slide" class="crisp-header__slider-slide"><img class="crisp-header__slider-slide-inner"
+              src="https://cdn.prod.website-files.com/69158db916f2854de7fae735/69158e74238022f91976b278_orange-leather-case.avif"
+              width="Auto" alt="Close-up of a rounded corner of a brown leather phone case with textured surface."
+              data-slideshow="parallax" draggable="false"></div>
+          <div data-slideshow="slide" class="crisp-header__slider-slide"><img class="crisp-header__slider-slide-inner"
+              src="https://cdn.prod.website-files.com/69158db916f2854de7fae735/69158e74238022f91976b258_modern-device-close-up.avif"
+              width="Auto"
+              alt="Close-up of a corner of a tablet with a smooth glass screen and rounded edges on a purple surface."
+              data-slideshow="parallax" draggable="false"></div>
+          <div data-slideshow="slide" class="crisp-header__slider-slide"><img class="crisp-header__slider-slide-inner"
+              src="https://cdn.prod.website-files.com/69158db916f2854de7fae735/69158e74238022f91976b287_sleek-device-close-up.avif"
+              width="Auto" alt="Close-up of a curved corner of a sleek, modern device with a smooth dark surface."
+              data-slideshow="parallax" draggable="false"></div>
+          <div data-slideshow="slide" class="crisp-header__slider-slide"><img class="crisp-header__slider-slide-inner"
+              src="https://cdn.prod.website-files.com/69158db916f2854de7fae735/69158e74238022f91976b268_minimalist-teal-design.avif"
+              width="Auto"
+              alt="Close-up view of a rounded corner of a textured, dark gray-blue rectangular object against a matching background."
+              data-slideshow="parallax" draggable="false"></div>
+        </div>
+      </div>
+      <div class="crisp-loader">
+        <div class="crisp-loader__wrap">
+          <div class="crisp-loader__groups">
+            <div class="crisp-loader__group is--duplicate">
+              <div class="crisp-loader__single">
+                <div class="crisp-loader__media"><img loading="eager"
+                    src="https://cdn.prod.website-files.com/69158db916f2854de7fae735/69158e74238022f91976b287_sleek-device-close-up.avif"
+                    alt="Close-up of a curved corner of a sleek, modern device with a smooth dark surface."
+                    class="crisp-loader__cover-img"></div>
+              </div>
+              <div class="crisp-loader__single">
+                <div class="crisp-loader__media"><img loading="eager"
+                    src="https://cdn.prod.website-files.com/69158db916f2854de7fae735/69158e74238022f91976b268_minimalist-teal-design.avif"
+                    alt="Close-up view of a rounded corner of a textured, dark gray-blue rectangular object against a matching background."
+                    class="crisp-loader__cover-img"></div>
+              </div>
+              <div class="crisp-loader__single">
+                <div class="crisp-loader__media"><img loading="eager"
+                    src="https://cdn.prod.website-files.com/69158db916f2854de7fae735/69158e74238022f91976b241_green-headphone-close-up.avif"
+                    alt="Close-up of textured green headphones focusing on the ear cup and headband connection."
+                    class="crisp-loader__cover-img"></div>
+              </div>
+              <div class="crisp-loader__single">
+                <div class="crisp-loader__media"><img loading="eager"
+                    src="https://cdn.prod.website-files.com/69158db916f2854de7fae735/69158e74238022f91976b278_orange-leather-case.avif"
+                    alt="Close-up of a rounded corner of a brown leather phone case with textured surface."
+                    class="crisp-loader__cover-img"></div>
+              </div>
+              <div class="crisp-loader__single">
+                <div class="crisp-loader__media"><img loading="eager"
+                    src="https://cdn.prod.website-files.com/69158db916f2854de7fae735/69158e74238022f91976b258_modern-device-close-up.avif"
+                    alt="Close-up of a corner of a tablet with a smooth glass screen and rounded edges on a purple surface."
+                    class="crisp-loader__cover-img"></div>
+              </div>
+            </div>
+            <div class="crisp-loader__group is--relative">
+              <div class="crisp-loader__single">
+                <div class="crisp-loader__media"><img loading="eager"
+                    src="https://cdn.prod.website-files.com/69158db916f2854de7fae735/69158e74238022f91976b287_sleek-device-close-up.avif"
+                    alt="Close-up of a curved corner of a sleek, modern device with a smooth dark surface."
+                    class="crisp-loader__cover-img is--scale-down"></div>
+              </div>
+              <div class="crisp-loader__single">
+                <div class="crisp-loader__media"><img loading="eager"
+                    src="https://cdn.prod.website-files.com/69158db916f2854de7fae735/69158e74238022f91976b268_minimalist-teal-design.avif"
+                    alt="Close-up view of a rounded corner of a textured, dark gray-blue rectangular object against a matching background."
+                    class="crisp-loader__cover-img is--scale-down"></div>
+              </div>
+              <div class="crisp-loader__single">
+                <div class="crisp-loader__media is--scaling is--radius"><img loading="eager"
+                    src="https://cdn.prod.website-files.com/69158db916f2854de7fae735/69158e74238022f91976b241_green-headphone-close-up.avif"
+                    alt="Close-up of textured green headphones focusing on the ear cup and headband connection."
+                    class="crisp-loader__cover-img"></div>
+              </div>
+              <div class="crisp-loader__single">
+                <div class="crisp-loader__media"><img loading="eager"
+                    src="https://cdn.prod.website-files.com/69158db916f2854de7fae735/69158e74238022f91976b278_orange-leather-case.avif"
+                    alt="Close-up of a rounded corner of a brown leather phone case with textured surface."
+                    class="crisp-loader__cover-img is--scale-down"></div>
+              </div>
+              <div class="crisp-loader__single">
+                <div class="crisp-loader__media"><img loading="eager"
+                    src="https://cdn.prod.website-files.com/69158db916f2854de7fae735/69158e74238022f91976b258_modern-device-close-up.avif"
+                    alt="Close-up of a corner of a tablet with a smooth glass screen and rounded edges on a purple surface."
+                    class="crisp-loader__cover-img is--scale-down"></div>
+              </div>
+            </div>
+          </div>
+          <div class="crisp-loader__fade"></div>
+          <div class="crisp-loader__fade is--duplicate"></div>
+        </div>
+      </div>
+      <div class="crisp-header__content">
+        <div class="crisp-header__top">
+          <div class="crisp-header__hamburger">
+            <div class="crisp-header__hamburger-bar"></div>
+            <div class="crisp-header__hamburger-bar"></div>
+            <div class="crisp-header__hamburger-bar"></div>
+          </div>
+        </div>
+        <div class="crisp-header__center">
+          <h1 class="crisp-header__h1">We just love pixels</h1>
+        </div>
+        <div class="crisp-header__bottom">
+          <div class="crisp-header__slider-nav">
+            <div data-slideshow="thumb" class="crisp-header__slider-nav-btn is--current"><img loading="eager"
+                src="https://cdn.prod.website-files.com/69158db916f2854de7fae735/69158e74238022f91976b241_green-headphone-close-up.avif"
+                alt="Close-up of textured green headphones focusing on the ear cup and headband connection."
+                class="crisp-loader__cover-img"></div>
+            <div data-slideshow="thumb" class="crisp-header__slider-nav-btn"><img loading="eager"
+                src="https://cdn.prod.website-files.com/69158db916f2854de7fae735/69158e74238022f91976b278_orange-leather-case.avif"
+                alt="Close-up of a rounded corner of a brown leather phone case with textured surface."
+                class="crisp-loader__cover-img"></div>
+            <div data-slideshow="thumb" class="crisp-header__slider-nav-btn"><img loading="eager"
+                src="https://cdn.prod.website-files.com/69158db916f2854de7fae735/69158e74238022f91976b258_modern-device-close-up.avif"
+                alt="Close-up of a corner of a tablet with a smooth glass screen and rounded edges on a purple surface."
+                class="crisp-loader__cover-img"></div>
+            <div data-slideshow="thumb" class="crisp-header__slider-nav-btn"><img loading="eager"
+                src="https://cdn.prod.website-files.com/69158db916f2854de7fae735/69158e74238022f91976b287_sleek-device-close-up.avif"
+                alt="Close-up of a curved corner of a sleek, modern device with a smooth dark surface."
+                class="crisp-loader__cover-img"></div>
+            <div data-slideshow="thumb" class="crisp-header__slider-nav-btn"><img loading="eager"
+                src="https://cdn.prod.website-files.com/69158db916f2854de7fae735/69158e74238022f91976b268_minimalist-teal-design.avif"
+                alt="Close-up view of a rounded corner of a textured, dark gray-blue rectangular object against a matching background."
+                class="crisp-loader__cover-img"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script type="module" src="./src/main.js"></script>
+</body>
+
+</html>
